@@ -204,7 +204,7 @@ export const Analytics = () => {
 
   return (
     <div className={classes.wrapper}>
-      <h2>Marginswap Analytics</h2>
+      <h2>LeverDEX Analytics</h2>
       {showError ? (
         <div>Error. Contact Support</div>
       ) : aggregateBalancesLoading && swapVolumesLoading && swapsLoading ? (

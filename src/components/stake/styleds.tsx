@@ -107,10 +107,10 @@ export const ActionButton = styled.div`
     outline: none;
   }
   & .green {
-    background: linear-gradient(270deg, #2dde9e 0%, #4255ff 100%);
+    background: linear-gradient(270deg, #2dde9e 0%, #b37dff 100%);
   }
   & .purple {
-    background: linear-gradient(270deg, #ad01ff 0%, #4255ff 100%);
+    background: linear-gradient(270deg, #ad01ff 0%, #b37dff 100%);
   }
 `
 
@@ -150,7 +150,7 @@ export const InputTabs = styled(Tabs)`
     padding: 0;
     height: 36px;
     &[aria-selected='true'] {
-      background: #4255ff;
+      background: #b37dff;
       border-radius: 7px;
     }
   }
@@ -159,7 +159,7 @@ export const InputTabs = styled(Tabs)`
 export const MaxButton = styled.button`
   width: 53px;
   height: 22px;
-  background: #4255ff;
+  background: #b37dff;
   border-radius: 4px;
   border: none;
   font-weight: 500;

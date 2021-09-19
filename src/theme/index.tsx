@@ -14,6 +14,7 @@ export * from './components'
 const MEDIA_WIDTHS = {
   upToExtraSmall: 500,
   upToSmall: 720,
+  from769: 769,
   upToMedium: 960,
   upToLarge: 1280
 }
@@ -59,9 +60,9 @@ export function colors(darkMode: boolean): Colors {
     testBG: darkMode ? 'rgba(50, 50, 50, 0.25)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#2172E5' : '#ff007a',
-    primary2: darkMode ? '#3680E7' : '#FF8CC3',
-    primary3: darkMode ? '#4D8FEA' : '#FF99C9',
+    primary1: darkMode ? '#b37dff' : '#ff007a',
+    primary2: darkMode ? '#a765ff' : '#FF8CC3',
+    primary3: darkMode ? '#511fb1' : '#FF99C9',
     primary4: darkMode ? '#376bad70' : '#F6DDE8',
     primary5: darkMode ? '#153d6f70' : '#FDEAF1',
 
@@ -69,7 +70,7 @@ export function colors(darkMode: boolean): Colors {
     primaryText1: darkMode ? '#E0E0E0' : '#ff007a',
 
     // secondary colors
-    secondary1: darkMode ? '#2172E5' : '#ff007a',
+    secondary1: darkMode ? '#9f72c7' : '#ff007a',
     secondary2: darkMode ? '#17000b26' : '#F6DDE8',
     secondary3: darkMode ? '#17000b26' : '#FDEAF1',
 
@@ -80,7 +81,7 @@ export function colors(darkMode: boolean): Colors {
     green1: '#27AE60',
     yellow1: '#FFE270',
     yellow2: '#F3841E',
-    blue1: '#2172E5',
+    blue1: '#b37dff',
 
     // dont wanna forget these blue yet
     blue4: darkMode ? '#9906FE;' : '#C4D9F8'

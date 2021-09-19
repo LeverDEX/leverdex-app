@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../../assets/images/Union.svg'
+import Logo from '../../assets/images/Lever_logo_transparent_64.png'
 import { useActiveWeb3React } from '../../hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
 import { CardNoise } from '../earn/styled'
@@ -29,7 +29,8 @@ import {
   UniIcon,
   UNIWrapper,
   StyledMenuItem,
-  LogoWrapper
+  LogoWrapper,
+  BrandName,
 } from './styled'
 import { Link } from 'react-router-dom'
 import useClickOutside from '../../hooks/useClickOutside'
@@ -122,11 +123,11 @@ export default function Header() {
           <UniIcon>
             <img width={'33px'} src={Logo} alt="logo" />
           </UniIcon>
-          <span>Marginswap</span>
+          <BrandName>LeverDEX</BrandName>
         </Title>
       </LogoWrapper>
       <HeaderRow>
-        <HeaderLinks id="desk">
+        <HeaderLinks id="desk" style={{ overflow : 'hidden'}}>
           {headerLinks.map(link => {
             if (chainId !== 1 && chainId !== 31337 && link.name === 'Stake') return null
             return (

@@ -1,6 +1,6 @@
-# Marginswap trading interface
+# LeverDex trading interface
 
-An open source interface for Marginswap.
+An open source interface for LeverDex.
 
 ## Development
 

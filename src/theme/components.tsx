@@ -42,8 +42,8 @@ export const StyledButton = styled(Button)`
   line-height: 1 !important;
 
   &:hover {
-    background-color: #4255ff !important;
-    border-color: #4255ff !important;
+    background-color: #b37dff !important;
+    border-color: #b37dff !important;
   }
 
   &:disabled {

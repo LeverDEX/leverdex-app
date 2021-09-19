@@ -1,6 +1,6 @@
 {
   "name": "@marginswap/interface",
-  "description": "Marginswap Interface",
+  "description": "LeverDex dApp",
   "homepage": ".",
   "private": true,
   "devDependencies": {

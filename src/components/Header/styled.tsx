@@ -82,7 +82,7 @@ export const HeaderRow = styled(RowFixed)`
 export const HeaderLinks = styled(Row)`
   justify-content: center;
 
-  ${({ theme }) => theme.mediaWidth.upToMedium`
+  ${({ theme }) => theme.mediaWidth.from769`
     display: none;
     padding: 1rem 0 1rem 1rem;
     justify-content: flex-end;
@@ -93,7 +93,7 @@ export const AccountElement = styled.div<{ active: boolean }>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #4255ff;
+  background: #b37dff;
   border-radius: 19px;
   white-space: nowrap;
   width: 100%;
@@ -101,7 +101,7 @@ export const AccountElement = styled.div<{ active: boolean }>`
   cursor: pointer;
 
   :focus {
-    border: 1px solid blue;
+    border: 1px solid #8800ff;
   }
 `
 
@@ -183,6 +183,12 @@ export const UniIcon = styled.div`
   :hover {
     transform: rotate(-5deg);
   }
+`
+
+export const BrandName = styled.span`
+  background: linear-gradient(45deg, #b058fd, #8590f4, #70ec9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 
 const activeClassName = 'ACTIVE'

@@ -147,7 +147,7 @@ const Numbers = ({ aggregateBalancesData, swapVolumesData }: NumbersProps) => {
       <div>
         <Stats
           title={'Total Volume'}
-          time={'All-time Marginswap volume'}
+          time={'All-time LeverDEX volume'}
           value={volumeSwap?.totalDailyVolume || 0}
           series={[]}
         />
@@ -155,13 +155,13 @@ const Numbers = ({ aggregateBalancesData, swapVolumesData }: NumbersProps) => {
       <div>
         <Stats
           title={'Monthly Volume'}
-          time={'Last 30 days Marginswap volume'}
+          time={'Last 30 days LeverDEX volume'}
           value={lastMonthSwapVolume?.totalDailyVolume || 0}
           series={[]}
         />
         <Stats
           title={'Daily Volume'}
-          time={'Last 24 hours Marginswap volume'}
+          time={'Last 24 hours LeverDEX volume'}
           value={Number(dailySwap?.totalDailyVolume.toFixed(2)) || 0}
           series={[]}
         />
@@ -169,13 +169,13 @@ const Numbers = ({ aggregateBalancesData, swapVolumesData }: NumbersProps) => {
       <div>
         <Stats
           title={'Monthly Fees'}
-          time={'Fees paid to Marginswap in the last 30 days'}
+          time={'Fees paid to LeverDEX in the last 30 days'}
           value={montlyFees || 0}
           series={[]}
         />
         <Stats
           title={'Total Value Locked'}
-          time={'Total deposits on Marginswap'}
+          time={'Total deposits on LeverDEX'}
           value={Number(aggregateBalances) || 0}
           series={[]}
         />
@@ -183,14 +183,14 @@ const Numbers = ({ aggregateBalancesData, swapVolumesData }: NumbersProps) => {
       <div>
         <Stats
           title={'Total Borrowed'}
-          time={'Total margin borrowing on Marginswap'}
+          time={'Total margin borrowing on LeverDEX'}
           value={totalBorrowed || 0}
           chartColor={'#F90B0B'}
           series={[]}
         />
         <Stats
           title={'Total Lending'}
-          time={'Total lending liquidity on Marginswap'}
+          time={'Total lending liquidity on LeverDEX'}
           value={totalLending || 0}
           chartColor={'#F99808'}
           series={[]}
