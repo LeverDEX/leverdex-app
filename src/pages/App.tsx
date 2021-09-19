@@ -70,7 +70,7 @@ export default function App() {
               <Route exact strict path="/stake" component={Stake} />
               <Route exact strict path="/margin-account" component={MarginAccount} />
               <Route exact strict path="/bond-supply" component={BondSupply} />
-              <Route exact strict path="/analytics" component={Analytics} />
+              {/*<Route exact strict path="/analytics" component={Analytics} />*/}
               <Route exact strict path="/gas-fees" component={GasFees} />
               <Route exact strict path="/vote" component={Vote} />
               <Route exact strict path="/vote/:id" component={VotePage} />

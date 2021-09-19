@@ -17,12 +17,13 @@ const StyledExplainerVideoLink = styled.div`
 `
 
 const VideoExplainerLink = () => (
-  <StyledExplainerVideoLink>
-    <a href="https://www.youtube.com/watch?v=rGGPAOCpDRs" target="_blank" rel="noreferrer">
-      <OndemandVideoIcon />
-      <span>Watch a How-To Video</span>
-    </a>
-  </StyledExplainerVideoLink>
+  <div></div>
+  // <StyledExplainerVideoLink>
+  //   <a href="https://www.youtube.com/watch?v=r62PA03pDRs" target="_blank" rel="noreferrer">
+  //     <OndemandVideoIcon />
+  //     <span>Watch a How-To Video</span>
+  //   </a>
+  // </StyledExplainerVideoLink>
 )
 
 export default VideoExplainerLink
