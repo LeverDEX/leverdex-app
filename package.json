@@ -1,5 +1,5 @@
 {
-  "name": "@marginswap/interface",
+  "name": "@leverdex/app",
   "description": "LeverDex dApp",
   "homepage": ".",
   "private": true,
