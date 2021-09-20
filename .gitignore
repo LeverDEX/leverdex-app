@@ -19,6 +19,7 @@
 .env.production.local
 
 /.netlify
+.firebase/
 
 npm-debug.log*
 yarn-debug.log*
