@@ -93,7 +93,7 @@ export const AccountElement = styled.div<{ active: boolean }>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #b37dff;
+  background: #994fff;
   border-radius: 19px;
   white-space: nowrap;
   width: 100%;
