@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChainId } from '@marginswap/sdk'
+import { ChainId } from '@leverdex/sdk'
 
 import { useActiveWeb3React } from 'hooks'
 import { ApplicationModal } from '../../state/application/actions'
@@ -31,7 +31,7 @@ export default function NetworkModal(): JSX.Element | null {
         <HeaderRow>
           Select a Network <br />
           <br />
-          You are currently browsing <span className="colored-text-blue4">MarginSwap</span>
+          You are currently browsing <span className="colored-text-blue4">LeverDEX</span>
           <br /> on the <span className="colored-text-primary1">{NETWORK_LABEL[chainId]}</span> network
         </HeaderRow>
 

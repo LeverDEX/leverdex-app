@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChainId, Token } from '@marginswap/sdk'
+import { ChainId, Token } from '@leverdex/sdk'
 import { Web3Provider } from '@ethersproject/providers/lib/web3-provider'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

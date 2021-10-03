@@ -1,4 +1,4 @@
-import { Token } from '@marginswap/sdk'
+import { Token } from '@leverdex/sdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

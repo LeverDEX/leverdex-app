@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from '@marginswap/sdk'
+import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from '@leverdex/sdk'
 import { useActiveWeb3React } from 'hooks'
 import useTheme from 'hooks/useTheme'
 import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 'react'

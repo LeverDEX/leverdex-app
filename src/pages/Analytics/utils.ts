@@ -1,9 +1,9 @@
 import axiosInstance from '../../config/axios-config'
 import { DateTime } from 'luxon'
 import groupby from 'lodash.groupby'
-import tokenListMarginSwap from '../../constants/tokenLists/marginswap-default.tokenlist.json'
+import tokenListMarginSwap from '../../constants/tokenLists/leverdex-default.tokenlist.json'
 import { AVALANCHE_TOKENS_LIST } from '../../constants'
-import { TokenAmount, Token } from '@marginswap/sdk'
+import { TokenAmount, Token } from '@leverdex/sdk'
 import transform from 'lodash.transform'
 
 import legacyAvalancheData from '../../data/legacy-data/avalanche-aug-2021.json'

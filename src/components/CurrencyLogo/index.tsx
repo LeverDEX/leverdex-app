@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token, ChainId } from '@marginswap/sdk'
+import { Currency, ETHER, Token, ChainId } from '@leverdex/sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 

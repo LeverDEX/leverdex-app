@@ -1,4 +1,4 @@
-import { ChainId } from '@marginswap/sdk'
+import { ChainId } from '@leverdex/sdk'
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import Modal from '../Modal'

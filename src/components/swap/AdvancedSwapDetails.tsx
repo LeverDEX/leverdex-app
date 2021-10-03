@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@marginswap/sdk'
+import { Trade, TradeType } from '@leverdex/sdk'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { Field } from '../../state/swap/actions'

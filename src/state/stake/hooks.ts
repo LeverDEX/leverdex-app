@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Token, TokenAmount, WETH, Pair, AMMs } from '@marginswap/sdk'
+import { ChainId, JSBI, Token, TokenAmount, WETH, Pair, AMMs } from '@leverdex/sdk'
 import { useMemo } from 'react'
 import { DAI, UNI, USDC, WBTC } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'

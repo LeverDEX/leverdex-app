@@ -1,5 +1,5 @@
 import { UNI, PRELOADED_PROPOSALS } from './../../constants/index'
-import { ChainId, TokenAmount } from '@marginswap/sdk'
+import { ChainId, TokenAmount } from '@leverdex/sdk'
 import { isAddress } from 'ethers/lib/utils'
 import { useGovernanceContract, useUniContract } from '../../hooks/useContract'
 import { useSingleCallResult, useSingleContractMultipleData } from '../multicall/hooks'

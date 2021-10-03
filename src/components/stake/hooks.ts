@@ -11,7 +11,7 @@ import {
   getLiquidityAPRPerWeight,
   canWithdraw,
   isMigrated
-} from '@marginswap/sdk'
+} from '@leverdex/sdk'
 import { Contract } from '@ethersproject/contracts'
 import { Web3Provider } from '@ethersproject/providers/lib/web3-provider'
 import { getMFIStakingContract } from 'utils'

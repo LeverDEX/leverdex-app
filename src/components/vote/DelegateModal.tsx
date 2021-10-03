@@ -15,7 +15,7 @@ import { useDelegateCallback } from '../../state/governance/hooks'
 import { useTokenBalance } from '../../state/wallet/hooks'
 import { UNI } from '../../constants'
 import { LoadingView, SubmittedView } from '../ModalViews'
-import { ChainId } from '@marginswap/sdk'
+import { ChainId } from '@leverdex/sdk'
 
 const ContentWrapper = styled(AutoColumn)`
   width: 100%;

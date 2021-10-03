@@ -21,7 +21,7 @@ import {
   getTokenAllowances,
   getTokenBalance,
   Token
-} from '@marginswap/sdk'
+} from '@leverdex/sdk'
 import { ErrorBar, WarningBar } from '../../components/Placeholders'
 import { BigNumber } from '@ethersproject/bignumber'
 import { StyledTableContainer, StyledWrapperDiv, StyledSectionDiv } from './styled'
@@ -30,7 +30,7 @@ import { toast } from 'react-toastify'
 import { useTransactionAdder, useIsTransactionPending } from '../../state/transactions/hooks'
 import { getPegCurrency, USDT_MAINNET } from '../../constants'
 import { setInterval } from 'timers'
-import tokensList from '../../constants/tokenLists/marginswap-default.tokenlist.json'
+import tokensList from '../../constants/tokenLists/leverdex-default.tokenlist.json'
 import { TransactionDetails } from '../../state/transactions/reducer'
 import { NETWORK_URLS } from '../../constants/networks'
 import Tooltip from '@material-ui/core/Tooltip'

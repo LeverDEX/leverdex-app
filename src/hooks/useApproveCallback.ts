@@ -9,7 +9,7 @@ import {
   getAddresses,
   getLiquidityMiningReward,
   getMFIStaking
-} from '@marginswap/sdk'
+} from '@leverdex/sdk'
 import { useCallback, useMemo } from 'react'
 import { useTokenAllowance } from '../data/Allowances'
 import { Field } from '../state/swap/actions'

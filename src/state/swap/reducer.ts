@@ -1,4 +1,4 @@
-import { LeverageType } from '@marginswap/sdk'
+import { LeverageType } from '@leverdex/sdk'
 import { createReducer } from '@reduxjs/toolkit'
 import {
   Field,

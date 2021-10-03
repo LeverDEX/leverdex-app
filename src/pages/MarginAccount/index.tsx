@@ -26,7 +26,7 @@ import {
   withdrawableInPeg,
   totalLendingAvailable,
   getBorrowInterestRates
-} from '@marginswap/sdk'
+} from '@leverdex/sdk'
 import { TokenInfo } from '@uniswap/token-lists'
 import { ErrorBar, WarningBar } from '../../components/Placeholders'
 import { useActiveWeb3React } from '../../hooks'
@@ -43,7 +43,7 @@ import { useIsTransactionPending, useTransactionAdder } from '../../state/transa
 import { getPegCurrency, USDT_MAINNET } from '../../constants'
 import { setInterval } from 'timers'
 import { valueInPeg2token, useETHBalances } from 'state/wallet/hooks'
-import tokensList from '../../constants/tokenLists/marginswap-default.tokenlist.json'
+import tokensList from '../../constants/tokenLists/leverdex-default.tokenlist.json'
 import { TransactionDetails } from '../../state/transactions/reducer'
 import { NETWORK_URLS } from '../../constants/networks'
 
@@ -373,7 +373,7 @@ export const MarginAccount = () => {
     ] = await Promise.all([
       // margin account balances (array)
       getAccountBalances(account, chainId, queryProvider),
-      // which tokens have approved the marginswap contract
+      // which tokens have approved the leverdex contract
       getTokenAllowances(
         account,
         tokens.map(token => token.address),
@@ -451,7 +451,7 @@ export const MarginAccount = () => {
         {}
       )
     )
-    // which tokens have approved the marginswap contract
+    // which tokens have approved the leverdex contract
     setAllowances(
       _allowances.reduce(
         (acc: any, cur: number, index: number) => ({

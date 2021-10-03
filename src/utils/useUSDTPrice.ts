@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, JSBI, Price, WETH, AMMs, ammsPerChain } from '@marginswap/sdk'
+import { ChainId, Currency, currencyEquals, JSBI, Price, WETH, AMMs, ammsPerChain } from '@leverdex/sdk'
 import { useMemo } from 'react'
 import { getPegCurrency } from '../constants'
 import { PairState, usePairs } from '../data/Reserves'

@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@marginswap/sdk'
+import { ChainId } from '@leverdex/sdk'
 
 export interface SerializableTransactionReceipt {
   to: string

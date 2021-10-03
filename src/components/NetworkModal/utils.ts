@@ -1,4 +1,4 @@
-import { ChainId } from '@marginswap/sdk'
+import { ChainId } from '@leverdex/sdk'
 
 export const PARAMS: {
   [chainId in ChainId]?: {

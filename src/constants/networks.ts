@@ -1,4 +1,4 @@
-import { ChainId } from '@marginswap/sdk'
+import { ChainId } from '@leverdex/sdk'
 
 //import Arbitrum from '../assets/networks/arbitrum-network.jpg'
 //import Avalanche from '../assets/networks/avalanche-network.jpg'

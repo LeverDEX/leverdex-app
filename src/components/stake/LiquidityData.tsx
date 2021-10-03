@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ChainId, TokenAmount, Token } from '@marginswap/sdk'
+import { ChainId, TokenAmount, Token } from '@leverdex/sdk'
 import { Web3Provider } from '@ethersproject/providers/lib/web3-provider'
 
 import Parameters from './Parameters'

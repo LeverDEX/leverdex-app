@@ -19,7 +19,7 @@ import { useWeb3React } from '@web3-react/core'
 import { useActiveWeb3React } from '../../hooks'
 import { TransactionResponse } from '@ethersproject/providers'
 import { useTransactionAdder } from '../../state/transactions/hooks'
-import { getAddresses } from '@marginswap/sdk'
+import { getAddresses } from '@leverdex/sdk'
 const { REACT_APP_FEE_PERCENT } = process.env
 
 const calcMinReceived = (amount: number, slippageTolerance: number) =>

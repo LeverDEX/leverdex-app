@@ -20,7 +20,7 @@ import {
   getStakedBalance,
   getMFIStaking,
   getLiquidityMiningReward
-} from '@marginswap/sdk'
+} from '@leverdex/sdk'
 
 import { ApprovalState, useApproveCallbackFromStakeTrade } from '../../hooks/useApproveCallback'
 import { useIsTransactionPending, useTransactionAdder } from '../../state/transactions/hooks'

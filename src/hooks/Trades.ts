@@ -1,5 +1,5 @@
 import { isTradeBetter } from 'utils/trades'
-import { Currency, CurrencyAmount, Pair, Token, Trade, AMMs, ammsPerChain, ChainId } from '@marginswap/sdk'
+import { Currency, CurrencyAmount, Pair, Token, Trade, AMMs, ammsPerChain, ChainId } from '@leverdex/sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

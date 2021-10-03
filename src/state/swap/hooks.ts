@@ -1,6 +1,6 @@
 import useENS from '../../hooks/useENS'
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@marginswap/sdk'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@leverdex/sdk'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useActiveWeb3React } from '../../hooks'
@@ -23,7 +23,7 @@ import { computeSlippageAdjustedAmounts } from '../../utils/prices'
 import { SwapState } from './reducer'
 import { ParsedQs } from 'qs'
 import useParsedQueryString from 'hooks/useParsedQueryString'
-import { LeverageType } from '@marginswap/sdk'
+import { LeverageType } from '@leverdex/sdk'
 
 export function useSwapState(): AppState['swap'] {
   return useSelector<AppState, AppState['swap']>(state => state.swap)

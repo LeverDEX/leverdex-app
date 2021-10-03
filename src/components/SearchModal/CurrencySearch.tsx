@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@marginswap/sdk'
+import { Currency, ETHER, Token } from '@leverdex/sdk'
 import React, { KeyboardEvent, RefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import ReactGA from 'react-ga'
 import { FixedSizeList } from 'react-window'
@@ -22,7 +22,7 @@ import useTheme from 'hooks/useTheme'
 import ImportRow from './ImportRow'
 import { Edit } from 'react-feather'
 import { ButtonLight } from 'components/Button'
-import { LeverageType } from '@marginswap/sdk'
+import { LeverageType } from '@leverdex/sdk'
 import { useSwapState } from '../../state/swap/hooks'
 
 const ContentWrapper = styled(Column)`
