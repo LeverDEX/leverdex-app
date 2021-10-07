@@ -1,4 +1,5 @@
 import { ChainId } from '@leverdex/sdk'
+import { NETWORK_URLS } from '../../constants/networks'
 
 export const PARAMS: {
   [chainId in ChainId]?: {
@@ -21,7 +22,7 @@ export const PARAMS: {
       symbol: 'ETH',
       decimals: 18
     },
-    rpcUrls: ['https://mainnet.infura.io/v3/ae52aea5aa2b41e287d72e10b1175491'],
+    rpcUrls: [NETWORK_URLS[ChainId.MAINNET]],
     blockExplorerUrls: ['https://etherscan.com']
   },
   /*[ChainId.ROPSTEN]: {

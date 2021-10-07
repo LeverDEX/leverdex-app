@@ -3,9 +3,11 @@ import { InjectedConnector } from '@web3-react/injected-connector'
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import { PortisConnector } from '@web3-react/portis-connector'
+import { ChainId } from '@leverdex/sdk'
 
 import { FortmaticConnector } from './Fortmatic'
 import { NetworkConnector } from './NetworkConnector'
+import { NETWORK_URLS } from '../constants/networks'
 
 const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
 const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
@@ -20,12 +22,12 @@ if (typeof NETWORK_URL === 'undefined') {
 export const network = new NetworkConnector({
   urls: {
     // [NETWORK_CHAIN_ID]: NETWORK_URL,
-    1: 'https://mainnet.infura.io/v3/ae52aea5aa2b41e287d72e10b1175491',
-    42: 'https://kovan.infura.io/v3/ae52aea5aa2b41e287d72e10b1175491',
-    43114: 'https://api.avax.network/ext/bc/C/rpc',
-    31337: 'http://localhost:8545',
-    137: 'https://rpc-mainnet.maticvigil.com/v1/b0858bc7aa27b1333df19546c12718235bd11785',
-    56: 'https://bsc-dataseed.binance.org/'
+    [ChainId.MAINNET]: NETWORK_URLS[ChainId.MAINNET],
+    [ChainId.KOVAN]: NETWORK_URLS[ChainId.KOVAN],
+    [ChainId.AVALANCHE]: NETWORK_URLS[ChainId.AVALANCHE],
+    [ChainId.LOCAL]: NETWORK_URLS[ChainId.LOCAL],
+    [ChainId.MATIC]: NETWORK_URLS[ChainId.MATIC],
+    [ChainId.BSC]: NETWORK_URLS[ChainId.BSC],
   },
   defaultChainId: 1
 })
