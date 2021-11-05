@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../../assets/images/Lever_logo_transparent_64.png'
+import SunIco from '../../assets/svg/sun.svg'
+import MoonIco from '../../assets/svg/moon.svg'
 import { useActiveWeb3React } from '../../hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
 import { CardNoise } from '../earn/styled'
@@ -30,10 +32,11 @@ import {
   UNIWrapper,
   StyledMenuItem,
   LogoWrapper,
-  BrandName,
+  BrandName, HeaderElementWrap, StyledMenuButton,
 } from './styled'
 import { Link } from 'react-router-dom'
 import useClickOutside from '../../hooks/useClickOutside'
+import {useDarkModeManager} from "../../state/user/hooks";
 
 const headerLinks = [
   { path: '/swap', name: 'Swap' },
@@ -96,7 +99,7 @@ export default function Header() {
   const { account, chainId } = useActiveWeb3React()
 
   const userEthBalance = useETHBalances(account ? [account] : [])?.[account ?? '']
-  // const [darkMode, toggleDarkMode] = useDarkModeManager()
+  const [darkMode, toggleDarkMode] = useDarkModeManager()
 
   const toggleClaimModal = useToggleSelfClaimModal()
 
@@ -193,7 +196,10 @@ export default function Header() {
         </HeaderElement>
         {/*<HeaderElementWrap>*/}
         {/*  <StyledMenuButton onClick={() => toggleDarkMode()}>*/}
-        {/*    {darkMode ? <Moon size={20} /> : <Sun size={20} />}*/}
+        {/*    {darkMode*/}
+        {/*        ? MoonIco*/}
+        {/*        : SunIco*/}
+        {/*    }*/}
         {/*  </StyledMenuButton>*/}
         {/*</HeaderElementWrap>*/}
       </HeaderControls>
